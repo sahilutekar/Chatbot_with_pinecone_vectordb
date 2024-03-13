@@ -3,12 +3,12 @@ This ChatBot is designed to interactively answer questions based on a combinatio
 Components
 1. Document Loading and Processing
 
-    Document Loader: Utilizes TextLoader from langchain.document_loaders to load text data from a file .
+    Document Loader: Utilizes TextLoader from langchain.document_loaders to load text data from a file.
     Text Splitter: Employs CharacterTextSplitter from langchain.text_splitter to split the loaded text into smaller chunks for processing.
 
 2. Embedding Generation
 
-    Hugging Face Embeddings: Utilizes HuggingFaceEmbeddings from langchain.embeddings to generate embeddings for text chunks.
+    Hugging Face Embeddings: Utilizes HuggingFaceEmbeddings from langchain. embeddings to generate embeddings for text chunks.
 
 3. Vector Store Management
 
@@ -20,8 +20,8 @@ Components
 
 5. User Interaction
 
-    Prompt Template: Defines a template for user interaction using PromptTemplate from langchain.prompts. It prompts the user to ask a question and formats the input question for further processing.
-    Runnable Passthrough: Represents a placeholder for passing input data directly to the next component in the processing pipeline.
+    Prompt Template: Defines a template for user interaction using PromptTemplate from langchain. prompts. It prompts the user to ask a question and formats the input question for further processing.
+    Runnable Passthrough: This represents a placeholder for passing input data directly to the next component in the processing pipeline.
     Output Parser: Converts the output of the language model into a human-readable format using StrOutputParser from langchain.schema.output_parser.
 
 Usage
@@ -32,6 +32,6 @@ Usage
 
     Run the provided Python script to instantiate the ChatBot and start the question-answering loop:
 
-python chatbot.py
+python main.py
 
 Interact with the ChatBot by entering questions. Type 'exit' to end the session.
